@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import Home from './components/Home';
 import Projects from './components/Projects';
 import Education from './components/Education';
+import Certifications from './components/Certifications';
 
 const App = () => {
   return (
@@ -19,6 +20,9 @@ const App = () => {
             <li>
               <Link to="/education" className="text-white">Education</Link>
             </li>
+            <li>
+              <Link to="/certifications" className="text-white">Certifications</Link>
+            </li>
           </ul>
         </nav>
         <div className="container mx-auto p-4">
@@ -26,6 +30,7 @@ const App = () => {
             <Route path="/" element={<Home />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/education" element={<Education />} />
+            <Route path="/certifications" element={<Certifications />} />
           </Routes>
         </div>
       </div>
